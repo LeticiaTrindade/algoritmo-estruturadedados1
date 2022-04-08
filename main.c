@@ -27,15 +27,15 @@ void imprimir(No* no){
   }
 }
 
-void imprimir2(No* no){
-  if(no->proximo == NULL)
+ void inversoImprimir(No* no){
+  if(no == NULL)
   {
-    printf("%i", no->valor);
+    return;
   }
   else
   {
+    inversoImprimir(no->proximo);
     printf("%i ", no->valor);
-    imprimir(no->proximo);
   }
 }
 
@@ -90,7 +90,8 @@ int main(void) {
   lista = inserir(lista, 10);
   lista = inserir(lista, 20);
   lista = inserir(lista, 30);
-
+  lista = inserir(lista, 40);
+  
   imprimir(lista);
 
   lista = remover(lista, 20);
@@ -100,6 +101,14 @@ int main(void) {
   
   printf("\n\nBuscando 10 dentro da lista: \n");
   lista = buscar(lista, 10);
+
+printf("\n\nImprimindo lista do início ao fim \n");
+  imprimir(lista);
+  
+printf("\n\nImprimindo lista do fim para o início: \n");
+  inversoImprimir(lista);
+
+
   return 0;
 }
 
