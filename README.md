@@ -17,7 +17,7 @@
 -impressão da lista do início para o fim<br>
 -impressão da lista do fim para o início<br>
 
- <a href="https://github.com/LeticiaTrindade/algoritmo-estruturadedados1/blob/main/main.c" target="_blank"> resposta do algoritmo(incompleto) </a>
+ <a href="https://github.com/LeticiaTrindade/algoritmo-estruturadedados1/blob/main/main.c" target="_blank"> resposta do algoritmo </a>
 
 <br><br>
   5. Qual a complexidade assintótica de cada operação das questões 3 e 4?
